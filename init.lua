@@ -22,6 +22,7 @@ require "plugin_mods"
 require "aesthetics"
 
 
+vim.o.fileformats = 'unix,dos'
 
 
 
