@@ -1,4 +1,5 @@
-# AstroNvim Template
+![image](https://github.com/Toranian/astronvim-config/assets/29820369/cc3e9217-e7e3-4e4b-a00d-762408e38c11)
+
 
 **NOTE:** This is for AstroNvim v4+
 
