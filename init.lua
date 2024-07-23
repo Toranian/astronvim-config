@@ -20,6 +20,12 @@ require "polish"
 require "keybindings"
 require "plugin_mods"
 require "aesthetics"
+require "custom"
+
+
+require("notify").setup({
+  background_colour = "#000000",
+})
 
 
 vim.o.fileformats = 'unix,dos'
