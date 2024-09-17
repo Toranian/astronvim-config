@@ -9,6 +9,9 @@ return {
       suggestion = {
         enable = true,
         auto_trigger = true,
+        keymap = {
+          accept = "<Tab>i",
+        },
       },
       panel = {
         enable = true,

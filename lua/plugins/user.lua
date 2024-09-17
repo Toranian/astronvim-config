@@ -4,15 +4,14 @@
 ---@type LazySpec
 return {
   -- == Examples of Adding Plugins ==
+  {
+  "xiuaowong/transparent.nvim",
+  },
   "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
-  },
-
-  {
-    "xiyaowong/transparent.nvim",
   },
 
    {
@@ -85,19 +84,5 @@ return {
   },
 },
 
-{
-  'kevinhwang91/nvim-hlslens',
-  config = function()
-    require('hlslens').setup()
-  end
-},
-
-{
-  'petertriho/nvim-scrollbar',
-  config = function()
-    require('scrollbar').setup()
-    require('scrollbar.handlers.search').setup() -- for hlslens integration
-  end
-},
-
+  { 'smithbm2316/centerpad.nvim' },
 }
