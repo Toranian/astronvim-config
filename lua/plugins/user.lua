@@ -4,9 +4,7 @@
 ---@type LazySpec
 return {
   -- == Examples of Adding Plugins ==
-  {
-  "xiuaowong/transparent.nvim",
-  },
+  
   "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",
