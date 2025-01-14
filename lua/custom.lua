@@ -89,5 +89,5 @@ return {
     -- then load the extension
     telescope.load_extension("live_grep_args")
   end
-}
+},
 }
