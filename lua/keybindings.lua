@@ -13,6 +13,3 @@ vim.api.nvim_set_keymap('i', ',t', ':ToggleTerm direction=float<CR>', { noremap 
 
 
 
-
-
-

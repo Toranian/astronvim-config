@@ -22,56 +22,10 @@ require "plugin_mods"
 require "aesthetics"
 require "custom"
 
-
-
-
 require("notify").setup({
   background_colour = "#000000",
 })
 
 
 vim.o.fileformats = 'unix,dos'
-
--- Set tab size and indentation for different file types
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "python",
-  callback = function()
-    vim.bo.tabstop = 4
-    vim.bo.shiftwidth = 4
-    vim.bo.softtabstop = 4
-    vim.bo.expandtab = true
-  end
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"javascript", "typescript"},
-  callback = function()
-    vim.bo.tabstop = 2
-    vim.bo.shiftwidth = 2
-    vim.bo.softtabstop = 2
-    vim.bo.expandtab = true
-  end
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"html", "css"},
-  callback = function()
-    vim.bo.tabstop = 2
-    vim.bo.shiftwidth = 2
-    vim.bo.softtabstop = 2
-    vim.bo.expandtab = true
-  end
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "go",
-  callback = function()
-    vim.bo.tabstop = 4
-    vim.bo.shiftwidth = 4
-    vim.bo.expandtab = true
-  end
-})
-
-
-
 
