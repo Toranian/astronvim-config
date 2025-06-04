@@ -29,3 +29,34 @@ require("notify").setup({
 
 vim.o.fileformats = 'unix,dos'
 
+
+-- Enable vimtex plugin
+vim.g.vimtex_enabled = 1
+
+-- Set the PDF viewer (use Zathura, or your preferred viewer)
+-- vim.g.vimtex_view_method = '/usr/bin/zen-browser'
+vim.g.vimtex_view_method = 'zathura'
+-- vim.g.vimtex_view_general_viewer = '/usr/bin/zen-browser'
+
+-- Set the LaTeX compiler (latexmk for automatic compilation)
+-- vim.g.vimtex_compiler_method = 'latexmk'
+
+-- Auto compile when saving a file
+vim.g.vimtex_compiler_auto = 1
+
+vim.g.vimtex_compiler_latexmk = {
+  -- build_dir = "build",
+  callback = 1,
+  continuous = 1,
+  executable = "latexmk",
+  options = {
+    "-shell-escape",
+    -- "-verbose",
+    "-file-line-error",
+    "-interaction=nonstopmode",
+    "-synctex=1",
+    "-lualatex",
+    "-outdir=build",
+  }
+}
+

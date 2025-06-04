@@ -13,3 +13,16 @@ vim.api.nvim_set_keymap('i', ',t', ':ToggleTerm direction=float<CR>', { noremap 
 
 
 
+-- Map \ll to compile LaTeX (using latexmk)
+-- vim.api.nvim_set_keymap('n', '<leader>kl', ':VimtexCompile<CR>', { noremap = true, silent = true })
+
+-- Map \lv to view the PDF (open with zathura)
+-- vim.api.nvim_set_keymap('n', '<leader>kv', ':VimtexView<CR>', { noremap = true, silent = true })
+
+-- Open session list
+vim.api.nvim_set_keymap('n', '<leader>ks', ':SessionSearch<CR>', { noremap = true, silent = true })
+
+-- Reload astro
+vim.api.nvim_set_keymap('n', '<leader>kr', ':AstroReload | colorscheme catpuccin<CR>', { noremap = true, silent = true })
+
+
