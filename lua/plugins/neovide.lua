@@ -9,7 +9,7 @@ return {
     options = {
       opt = { -- configure vim.opt options
         -- configure font
-        guifont = "FiraCode Nerd Font Propo Ret:h12",
+        guifont = "FiraCode Nerd Font Propo Ret:h11",
         -- line spacing
         linespace=2,
       },
@@ -21,11 +21,11 @@ return {
         neovide_padding_bottom = 0,
         neovide_padding_right = 0,
         neovide_padding_left = 0,
-        neovide_opacity= 0.85,
+        -- neovide_opacity=0.75,
         neovide_scroll_animation_length=0.2,
         neovide_cursor_trail_size=0,
-        neovide_cursor_animation_length=0.075
-        -- neovide_transparency =0.9,
+        neovide_cursor_animation_length=0.075,
+        -- neovide_transparency=0.7,
       },
     },
   },
